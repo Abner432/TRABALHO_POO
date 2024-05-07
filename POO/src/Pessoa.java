@@ -5,6 +5,18 @@ public class Pessoa {
     private String nome;
     private int idade;
 
+    //criando os construtores
+    public Pessoa(String cpf, String nome, int idade) {
+        this.cpf = cpf;
+        this.nome = nome;
+        this.idade = idade;
+    }
+
+    //Criando o método
+    public int fazerAniversario(){
+        return this.idade+1;
+    }
+
     //Gerando os acessores
     public String getCpf() {
         return cpf;
@@ -25,5 +37,15 @@ public class Pessoa {
     }
     public void setIdade(int idade) {
         this.idade = idade;
+    }
+
+    @Override
+    public String toString() {
+        //criando retorno
+        return "Pessoa{"+
+                "CPF='"+cpf+ '\'' +
+                ", Nome="+nome+
+                ", Idade="+idade+
+                '}';
     }
 }
