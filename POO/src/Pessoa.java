@@ -1,4 +1,4 @@
-//criação da classe pessoa.
+//criação da classe Pessoa.
 public class Pessoa {
     //difinição dos atributos.
     private String cpf;
@@ -13,8 +13,8 @@ public class Pessoa {
     }
 
     //Criando o método
-    public int fazerAniversario(){
-        return this.idade+1;
+    public void fazerAniversario(){
+        
     }
 
     //Gerando os acessores
